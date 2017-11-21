@@ -7,9 +7,10 @@
 - [2) Software](#2-software)
    - [2.1) Operating System](#21-operating-system)
    - [2.2) Software Dependencies](#22-software-dependencies)
-- [3) Developing a VR App](#3-developing-vr-app)
-   - [3.1) Project setup](#31-project-setup)
-   - [3.2) Deploy](#32-deploy)
+- [3) VR App Development using 96Boards](#3-vr-app-development-using-96Boards)
+   - [3.1) Hardware Setup](#31-hardware-setup)
+   - [3.2) Project setup](#32-project-setup)
+   - [3.3) Project in Action](#33-project-in-action)
 - [4) Conclusion](#4-conclusion)
 
 # 1) Hardware
@@ -37,8 +38,14 @@ To develop our VR content, we will be using the [Unreal Engine 4 Editor](https:/
 
     Although an NVIDIA GPU in not required at all, I developed this demo using a Intel HD P630 GPU, NVIDIA CodeWorks needs to be install as it provides the Android SDK and NDK support required by UE4 to build Android packages.
 
-# 3) Developing a VR App    
-## 3.1) Project Setup
+# 3) VR App Development using 96Boards
+
+## 3.1) Hardware Setup
+  Make sure the neonkey is properly connected to board and a compatible AOSP build is installed.
+
+  ![Setup](./images/hw-setup.jpg)
+
+## 3.2) Project Setup
   - **Start Unreal Engine Editor 4**
   - **From the Unreal Projects Browser create a new Blueprint based project with the following options.**
     - Use the First Person Template
@@ -71,7 +78,7 @@ To develop our VR content, we will be using the [Unreal Engine 4 Editor](https:/
         - It is recommended to select arm64/armv8 as well since both the HiKey boards support 64bit apps.
         - ![Android Configuration](./images/android-config.png)
 
-## 3.2) Deploy
+## 3.3) Project in Action
   - **To deplay the VR application to the 96Boards development board:**
     - 1) File -> Package Product -> Android
     - 2) Select:
@@ -87,6 +94,10 @@ To develop our VR content, we will be using the [Unreal Engine 4 Editor](https:/
     $ cd <project output folder>
     $ adb install vr_demo-arm64-es2.apk
     ```
+
+## 3.4) Video Demonstration
+
+[![Demo](https://img.youtube.com/vi/XcyO-ql8KBM/0.jpg)](https://www.youtube.com/watch?v=XcyO-ql8KBM)
 
 # 4) Conclusion
 Although this project only covers the Unreal Engine 4, there is no such limitation. With the Mali G-71 GPU on boards the Hikey960 and quad cortex A73 BIG cores, It is a grate choice of hardware to develop and test VR Games and applications. On the other hand the neonkey provides excellent head tracking with its BMI160 based 9 axis accelerometer and gyroscope.
