@@ -1,3 +1,57 @@
+---
+# Front Matter
+# Title of your project used for the breadcrumb title and meta title.
+title:  VR App Development using 96Boards
+
+# Permalink your project will reside under on the 96boards.org website.
+# separate your title's words with dashes for SEO purposes.
+permalink: /projects/aosp_vr/
+author: Manivannan Sadhasivam
+
+# Add a description of your project
+description: This project shows how to use a Hikey960 to develop VR content.
+
+# Add the names of your images which are stored in the sub folders here.
+# The first image is always used in the table at /projects/
+# This section is used to add a social media share image to your project.
+# Place the image you'd like to use when sharing on social media in the /assets/images/projects/
+# folder and adjust the following YAML accordingly.
+# High Res 1920 x 1080
+# regenerated on site build
+image: 
+    path: /assets/images/projects/placeholder.png
+#    list:
+#        - thumb.png
+#        - share.png
+#social:
+#  name: 96Boards
+#  links:
+#    - https://twitter.com/96boards
+#    - https://www.facebook.com/96Boards/
+#    - https://www.linkedin.com/company/96boards/
+#    - https://plus.google.com/+96Boards
+#    - https://github.com/96boards
+project:
+    # Difficulty level for your project <Beginner, Intermediate, Experienced>
+    #difficulty_level:
+    # - Beginner
+    # Boards that you have used in this project. For a full list of boards see 
+    # this file in the 96boards/website repo - _data/boards.yml
+    boards_used: 
+        - hikey960
+        - hikey
+        - neonkey
+    # Verticals are catagories that your project belongs to. For a full list of verticals see 
+    # this file in the 96boards/website repo - _data/verticles.yml
+    verticals:
+        - Maker
+        - Virtual Reality
+#Optional tags for your projects: meta-key words
+tags:
+- hikey960
+- neonkey
+---
+
 # VR App Development using 96Boards
 ###### v0.1
 
